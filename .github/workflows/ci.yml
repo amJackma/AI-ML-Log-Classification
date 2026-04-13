@@ -31,6 +31,3 @@ jobs:
     - name: Test inference
       run: |
         python src/inference.py
-
-    - name: Success Message
-      run: echo "CI Pipeline executed successfully!"
