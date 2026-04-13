@@ -2,9 +2,9 @@ name: AI Log Classifier CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -31,3 +31,6 @@ jobs:
     - name: Test inference
       run: |
         python src/inference.py
+
+    - name: Success Message
+      run: echo "CI Pipeline executed successfully!"
